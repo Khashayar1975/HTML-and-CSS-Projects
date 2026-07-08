@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding-bottom: 120px;
+    font-family: Georgia, serif;
+    background-color: #f7f1ed;
+}
+
+/* NAVBAR */
+.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #006b5f;
+    width: 100%;
+    border-bottom: 4px solid #eaa0a0;
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 70px;
+}
+
+.nav-bar li{
+    position: relative;
+}
+
+.nav-bar a{
+    display: block;
+    padding: 22px 45px;
+    color: #d9d0c9;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.nav-bar a:hover{
+    background-color: #79d6c5;
+    color: white;
+}
+
+/* DROPDOWN */
+.rollover-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f7f1ed;
+    min-width: 210px;
+    z-index: 2000;
+}
+
+.rollover-menu a{
+    color: #006b5f;
+    padding: 22px 35px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #999;
+}
+
+.rollover-menu a:hover{
+    background-color: #79d6c5;
+    color: white;
+}
+
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+/* HEADER */
+header{
+    padding: 30px 0 10px 35px;
+}
+
+header h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+/* ABOUT */
+#about{
+    padding: 35px;
+    text-align: left;
+}
+
+#about h2{
+    font-size: 32px;
+    color: #006b5f;
+}
+
+#about p{
+    max-width: 900px;
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+/* SECTIONS */
+section{
+    padding: 20px 35px;
+    box-sizing: border-box;
+}
+
+section h2{
+    font-size: 30px;
+}
+
+/* FEATURED IMAGE */
+#featured img{
+    display: block;
+    width: 900px;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    margin: 20px 0;
+}
+
+/* ALL OTHER IMAGES */
+#pasta img,
+#chicken img,
+#pork img,
+#biscuits img,
+#fish img,
+#dessert img{
+    display: block;
+    width: 700px;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    margin: 25px auto;
+}
+
+/* BUTTON */
+button{
+    padding: 5px 12px;
+    font-size: 16px;
+}
+
+/* CONTACT */
+#contact{
+    padding: 30px 35px 70px;
+    text-align: left;
+}
+
+input,
+textarea{
+    font-family: Georgia, serif;
+    font-size: 16px;
+    margin: 3px;
+}
+
+/* FOOTER */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #006b5f;
+    color: #d9d0c9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0;
+    border-top: 4px solid #eaa0a0;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+footer div{
+    text-align: center;
+    margin: 0;
+}
+
+footer p{
+    margin: 8px;
+}
