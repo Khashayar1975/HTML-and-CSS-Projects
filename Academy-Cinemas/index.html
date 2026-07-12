@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Academy Cinemas</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link
+        rel="stylesheet"
+        href="css/custom.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BOOTSTRAP NAVIGATION BAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark cinema-navbar">
+
+        <div class="container">
+
+            <!-- Website Name -->
+            <a
+                class="navbar-brand"
+                href="#home"
+            >
+                Academy Cinemas
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#academyNavbar"
+                aria-controls="academyNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navigation -->
+            <div
+                class="collapse navbar-collapse"
+                id="academyNavbar"
+            >
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Now Playing Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#ben-hur"
+                            id="nowPlayingDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Now Playing
+                        </a>
+
+                        <ul
+                            class="dropdown-menu cinema-dropdown"
+                            aria-labelledby="nowPlayingDropdown"
+                        >
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#ben-hur"
+                                >
+                                    Ben-Hur
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#earth"
+                                >
+                                    The Day the Earth Stood Still
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#vertigo"
+                                >
+                                    Vertigo
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- Tickets -->
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#tickets"
+                        >
+                            Tickets
+                        </a>
+
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#contact"
+                        >
+                            Contact
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         FIRST PAGE / HOME
+    ====================================================== -->
+
+    <header
+        id="home"
+        class="hero-section page-section"
+    >
+
+        <div class="container-fluid">
+
+            <div class="hero-row">
+
+                <img
+                    src="images/logo.png"
+                    alt="Academy Cinemas"
+                    class="academy-logo"
+                >
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             MOVIE 1: BEN-HUR
+        ================================================== -->
+
+        <section
+            id="ben-hur"
+            class="movie-section page-section"
+        >
+
+            <div class="container">
+
+                <div class="row justify-content-center align-items-stretch g-4">
+
+                    <!-- Poster -->
+                    <div class="col-md-6 col-lg-5">
+
+                        <div class="movie-poster-panel">
+
+                            <img
+                                src="images/ben-hur.jpg"
+                                alt="Ben-Hur movie poster"
+                                class="movie-poster"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <!-- Movie Information -->
+                    <div class="col-md-6 col-lg-5">
+
+                        <article class="movie-info-panel">
+
+                            <h2>
+                                Ben-Hur
+                            </h2>
+
+                            <p>
+                                After a Jewish prince is betrayed and sent into
+                                slavery by a Roman friend in first-century
+                                Jerusalem, he regains his freedom and comes back
+                                seeking revenge.
+                            </p>
+
+                            <p class="movie-credits">
+
+                                <strong>Director:</strong>
+                                William Wyler
+
+                                <br>
+
+                                <strong>Starring:</strong>
+                                Charlton Heston | Jack Hawkins | Stephen Boyd
+
+                            </p>
+
+                            <h3 class="show-times-heading">
+                                Show Times
+                            </h3>
+
+                            <div class="show-times">
+
+                                <button type="button" class="show-time">
+                                    10:00 AM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    11:30 AM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    1:10 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    2:30 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    4:50 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    8:00 PM
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MOVIE 2: THE DAY THE EARTH STOOD STILL
+        ================================================== -->
+
+        <section
+            id="earth"
+            class="movie-section page-section"
+        >
+
+            <div class="container">
+
+                <div class="row justify-content-center align-items-stretch g-4">
+
+                    <!-- Information -->
+                    <div class="col-md-6 col-lg-5 order-2 order-md-1">
+
+                        <article class="movie-info-panel">
+
+                            <h2>
+                                The Day the Earth Stood Still
+                            </h2>
+
+                            <p>
+                                An alien lands in Washington, D.C. and tells the
+                                people of Earth that they must live peacefully
+                                or be destroyed as a danger to other planets.
+                            </p>
+
+                            <p class="movie-credits">
+
+                                <strong>Director:</strong>
+                                Robert Wise
+
+                                <br>
+
+                                <strong>Starring:</strong>
+                                Michael Rennie | Patricia Neal | Hugh Marlowe
+
+                            </p>
+
+                            <h3 class="show-times-heading">
+                                Show Times
+                            </h3>
+
+                            <div class="show-times">
+
+                                <button type="button" class="show-time">
+                                    10:00 AM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    11:30 AM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    1:10 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    2:30 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    4:50 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    8:00 PM
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- Poster -->
+                    <div class="col-md-6 col-lg-5 order-1 order-md-2">
+
+                        <div class="movie-poster-panel">
+
+                            <img
+                                src="images/earth-stood-still.jpg"
+                                alt="The Day the Earth Stood Still movie poster"
+                                class="movie-poster"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MOVIE 3: VERTIGO
+        ================================================== -->
+
+        <section
+            id="vertigo"
+            class="movie-section page-section"
+        >
+
+            <div class="container">
+
+                <div class="row justify-content-center align-items-stretch g-4">
+
+                    <!-- Poster -->
+                    <div class="col-md-6 col-lg-5">
+
+                        <div class="movie-poster-panel">
+
+                            <img
+                                src="images/vertigo.jpg"
+                                alt="Vertigo movie poster"
+                                class="movie-poster"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <!-- Movie Information -->
+                    <div class="col-md-6 col-lg-5">
+
+                        <article class="movie-info-panel">
+
+                            <h2>
+                                Vertigo
+                            </h2>
+
+                            <p>
+                                A former San Francisco police detective struggles
+                                with his personal demons and becomes obsessed
+                                with the hauntingly beautiful woman he has been
+                                hired to follow.
+                            </p>
+
+                            <p class="movie-credits">
+
+                                <strong>Director:</strong>
+                                Alfred Hitchcock
+
+                                <br>
+
+                                <strong>Starring:</strong>
+                                James Stewart | Kim Novak | Barbara Bel Geddes
+
+                            </p>
+
+                            <h3 class="show-times-heading">
+                                Show Times
+                            </h3>
+
+                            <div class="show-times">
+
+                                <button type="button" class="show-time">
+                                    10:00 AM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    11:30 AM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    1:10 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    2:30 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    4:50 PM
+                                </button>
+
+                                <button type="button" class="show-time">
+                                    8:00 PM
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TICKETS
+        ================================================== -->
+
+        <section
+            id="tickets"
+            class="tickets-section page-section"
+        >
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Tickets
+                </h2>
+
+                <form class="ticket-form">
+
+                    <div class="row justify-content-center g-4">
+
+                        <!-- Select Movie -->
+                        <div class="col-md-4">
+
+                            <div class="ticket-card">
+
+                                <label
+                                    for="ticketMovie"
+                                    class="ticket-label"
+                                >
+                                    Please select a movie
+                                </label>
+
+                                <select
+                                    id="ticketMovie"
+                                    class="form-select ticket-select"
+                                    required
+                                >
+
+                                    <option
+                                        value=""
+                                        selected
+                                        disabled
+                                    >
+                                        Select movie
+                                    </option>
+
+                                    <option value="Ben-Hur">
+                                        Ben-Hur
+                                    </option>
+
+                                    <option value="The Day the Earth Stood Still">
+                                        The Day the Earth Stood Still
+                                    </option>
+
+                                    <option value="Vertigo">
+                                        Vertigo
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Select Showtime -->
+                        <div class="col-md-4">
+
+                            <div class="ticket-card">
+
+                                <label
+                                    for="ticketTime"
+                                    class="ticket-label"
+                                >
+                                    Please select a show
+                                    <br>
+                                    time
+                                </label>
+
+                                <select
+                                    id="ticketTime"
+                                    class="form-select ticket-select"
+                                    required
+                                >
+
+                                    <option
+                                        value=""
+                                        selected
+                                        disabled
+                                    >
+                                        Select time
+                                    </option>
+
+                                    <option value="10:00 AM">
+                                        10:00 AM
+                                    </option>
+
+                                    <option value="11:30 AM">
+                                        11:30 AM
+                                    </option>
+
+                                    <option value="1:10 PM">
+                                        1:10 PM
+                                    </option>
+
+                                    <option value="2:30 PM">
+                                        2:30 PM
+                                    </option>
+
+                                    <option value="4:50 PM">
+                                        4:50 PM
+                                    </option>
+
+                                    <option value="8:00 PM">
+                                        8:00 PM
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Ticket Quantity -->
+                        <div class="col-md-4">
+
+                            <div class="ticket-card">
+
+                                <label
+                                    for="ticketQuantity"
+                                    class="ticket-label"
+                                >
+                                    Please select number of
+                                    <br>
+                                    tickets
+                                </label>
+
+                                <input
+                                    id="ticketQuantity"
+                                    class="form-control ticket-number"
+                                    type="number"
+                                    value="1"
+                                    min="1"
+                                    max="10"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <button
+                            type="submit"
+                            class="buy-ticket-button"
+                        >
+                            Buy Tickets
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            id="contact"
+            class="contact-section page-section"
+        >
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Contact Us!
+                </h2>
+
+                <form class="contact-form">
+
+                    <div class="row g-3">
+
+                        <!-- First Name -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="firstName"
+                                class="visually-hidden"
+                            >
+                                First Name
+                            </label>
+
+                            <input
+                                id="firstName"
+                                class="form-control"
+                                type="text"
+                                placeholder="First Name"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="lastName"
+                                class="visually-hidden"
+                            >
+                                Last Name
+                            </label>
+
+                            <input
+                                id="lastName"
+                                class="form-control"
+                                type="text"
+                                placeholder="Last Name"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12">
+
+                            <label
+                                for="email"
+                                class="visually-hidden"
+                            >
+                                Email
+                            </label>
+
+                            <input
+                                id="email"
+                                class="form-control"
+                                type="email"
+                                placeholder="Email"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Message -->
+                        <div class="col-12">
+
+                            <label
+                                for="message"
+                                class="visually-hidden"
+                            >
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                class="form-control"
+                                rows="4"
+                                placeholder="Type Message Here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="col-12 text-end">
+
+                            <button
+                                type="submit"
+                                class="contact-submit-button"
+                            >
+                                Submit
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="main-footer">
+
+        <div class="container">
+
+            <div class="row align-items-center footer-row g-4">
+
+                <!-- Copyright -->
+                <div class="col-md-4 text-center text-md-start">
+
+                    <p class="footer-copyright">
+                        &copy; Academy Cinemas
+                    </p>
+
+                </div>
+
+                <!-- Footer Logo -->
+                <div class="col-md-4 text-center">
+
+                    <a
+                        href="#home"
+                        class="footer-logo-link"
+                        aria-label="Return to Academy Cinemas home"
+                    >
+
+                        <img
+                            src="images/logo.png"
+                            alt="Academy Cinemas"
+                            class="footer-logo"
+                        >
+
+                    </a>
+
+                </div>
+
+                <!-- Footer Navigation -->
+                <div class="col-md-4">
+
+                    <nav
+                        class="footer-navigation"
+                        aria-label="Footer navigation"
+                    >
+
+                        <a href="#ben-hur">
+                            Now Playing
+                        </a>
+
+                        <a href="#tickets">
+                            Tickets
+                        </a>
+
+                        <a href="#contact">
+                            Contact
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Appears only once at the bottom -->
+        <div class="footer-bottom-text">
+            &copy; Prosper Consulting Inc., The Tech Academy
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap 5.3.8 JavaScript Bundle -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+</body>
+
+</html>

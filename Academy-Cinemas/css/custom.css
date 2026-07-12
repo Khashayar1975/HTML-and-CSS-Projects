@@ -1,0 +1,1149 @@
+/* =====================================================
+   GENERAL PAGE SETTINGS
+===================================================== */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 82px;
+
+    min-height: 100%;
+}
+
+body {
+    position: relative;
+
+    min-height: 100%;
+    margin: 0;
+
+    color: #2f2a27;
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    /*
+       ONE CONTINUOUS CURTAIN IMAGE FOR THE ENTIRE WEBSITE.
+       The image begins at the top and stretches to the bottom.
+       It does not restart inside each section.
+    */
+
+    background-color: #3b0907;
+
+    background-image:
+        linear-gradient(
+            rgba(31, 0, 0, 0.10),
+            rgba(31, 0, 0, 0.20)
+        ),
+        url("../images/theater-curtains.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    /*
+       100% width and 100% document height.
+       This stretches one curtain image over the whole page.
+    */
+
+    background-size:
+        100% 100%;
+
+    background-attachment: scroll;
+}
+
+img {
+    max-width: 100%;
+}
+
+header,
+section {
+    position: relative;
+
+    scroll-margin-top: 82px;
+}
+
+
+/* All sections remain transparent so the same body background shows */
+
+.page-section {
+    background-color: transparent;
+    background-image: none;
+}
+
+
+/* =====================================================
+   BOOTSTRAP NAVIGATION BAR
+===================================================== */
+
+.cinema-navbar {
+    position: sticky;
+    top: 0;
+
+    z-index: 2000;
+
+    min-height: 82px;
+
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(122, 34, 24, 0.97),
+            rgba(142, 53, 36, 0.97),
+            rgba(111, 27, 20, 0.97)
+        );
+
+    border-bottom:
+        1px solid rgba(255, 184, 47, 0.25);
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.38);
+}
+
+
+/* Navbar Brand */
+
+.navbar-brand {
+    margin-right: 2rem;
+
+    color: #ffbf22 !important;
+
+    font-size:
+        clamp(1.65rem, 2.5vw, 2.2rem);
+
+    font-weight: 700;
+
+    text-shadow:
+        2px 3px 2px rgba(57, 14, 7, 0.9);
+}
+
+
+/* Navbar Links */
+
+.cinema-navbar .nav-link {
+    color: #ffbf22 !important;
+
+    padding:
+        0.8rem 1rem !important;
+
+    font-size:
+        clamp(1.2rem, 2vw, 1.65rem);
+
+    font-weight: 700;
+
+    text-shadow:
+        2px 3px 2px rgba(57, 14, 7, 0.9);
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cinema-navbar .nav-link:hover,
+.cinema-navbar .nav-link:focus {
+    color: #ffffff !important;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* Bootstrap Mobile Menu Button */
+
+.navbar-toggler {
+    border:
+        2px solid rgba(255, 191, 34, 0.85);
+}
+
+.navbar-toggler:focus {
+    box-shadow:
+        0 0 0 0.2rem rgba(255, 191, 34, 0.28);
+}
+
+
+/* =====================================================
+   DROPDOWN MENU
+===================================================== */
+
+.cinema-dropdown {
+    min-width: 310px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    border:
+        2px solid rgba(98, 72, 57, 0.65);
+
+    border-radius: 0;
+
+    background-color: #ede7db;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.38);
+}
+
+.cinema-dropdown .dropdown-item {
+    padding:
+        1rem 1.25rem;
+
+    color: #302b28;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: normal;
+
+    border-bottom:
+        1px solid rgba(126, 82, 55, 0.32);
+}
+
+.cinema-dropdown li:last-child .dropdown-item {
+    border-bottom: none;
+}
+
+.cinema-dropdown .dropdown-item:hover,
+.cinema-dropdown .dropdown-item:focus {
+    color: #ffffff;
+
+    background-color: #832b1c;
+}
+
+
+/* =====================================================
+   FIRST PAGE / HOME
+===================================================== */
+
+.hero-section {
+    min-height:
+        calc(100vh - 82px);
+
+    overflow: hidden;
+}
+
+.hero-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height:
+        calc(100vh - 82px);
+
+    padding:
+        2rem 1rem 4rem;
+}
+
+
+/* Large Center Logo */
+
+.academy-logo {
+    display: block;
+
+    width:
+        min(70vw, 900px);
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            8px 10px 2px rgba(55, 55, 55, 0.75)
+        );
+
+    transform:
+        rotate(-4deg);
+}
+
+
+/* =====================================================
+   MOVIE SECTIONS
+===================================================== */
+
+.movie-section {
+    display: flex;
+    align-items: center;
+
+    min-height:
+        calc(100vh - 82px);
+
+    padding:
+        3.5rem 0;
+
+    overflow: hidden;
+}
+
+
+/* Movie Poster Panel */
+
+.movie-poster-panel {
+    height: 650px;
+
+    padding: 0.9rem;
+
+    overflow: hidden;
+
+    border:
+        2px solid rgba(101, 80, 67, 0.68);
+
+    background-color:
+        rgba(243, 238, 227, 0.96);
+
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.movie-poster {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: #efe9df;
+}
+
+
+/* Movie Information Panel */
+
+.movie-info-panel {
+    height: 650px;
+
+    padding:
+        2.2rem 2rem;
+
+    border:
+        2px solid rgba(101, 80, 67, 0.68);
+
+    background-color:
+        rgba(246, 240, 229, 0.96);
+
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.movie-info-panel h2 {
+    margin-bottom: 1.3rem;
+
+    color: #2e2c2a;
+
+    font-size:
+        clamp(2rem, 4vw, 3rem);
+
+    font-weight: 700;
+}
+
+.movie-info-panel p {
+    color: #6a635d;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 1.03rem;
+    line-height: 1.65;
+}
+
+.movie-credits {
+    margin-top: 1.8rem;
+}
+
+.movie-credits strong {
+    color: #3d3732;
+}
+
+
+/* Show Times Heading */
+
+.show-times-heading {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    color: #2b2927;
+
+    font-family:
+        "Pacifico",
+        cursive;
+
+    font-size:
+        clamp(1.8rem, 4vw, 2.5rem);
+
+    font-weight: 400;
+}
+
+
+/* Show Time Buttons */
+
+.show-times {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.7rem;
+}
+
+.show-time {
+    min-width: 75px;
+
+    padding:
+        0.65rem 0.85rem;
+
+    color: #272421;
+
+    border: none;
+    border-radius: 24px;
+
+    background-color: #a59c92;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.show-time:hover,
+.show-time:focus {
+    color: #ffffff;
+
+    background-color: #7e2a1c;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =====================================================
+   SHARED SECTION TITLE
+===================================================== */
+
+.section-title {
+    margin-bottom: 2rem;
+
+    color: #ffc000;
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(3.4rem, 7vw, 5.8rem);
+
+    font-weight: 700;
+    text-align: center;
+
+    text-shadow:
+        3px 4px 2px rgba(74, 17, 8, 0.95);
+}
+
+
+/* =====================================================
+   TICKETS SECTION
+===================================================== */
+
+.tickets-section {
+    min-height:
+        calc(100vh - 82px);
+
+    padding:
+        6rem 0 4rem;
+
+    overflow: hidden;
+}
+
+.ticket-form {
+    max-width: 1280px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Ticket Boxes */
+
+.ticket-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    min-height: 290px;
+
+    padding:
+        3rem 2rem 2rem;
+
+    border:
+        3px solid rgba(102, 81, 68, 0.75);
+
+    background-color:
+        rgba(247, 240, 228, 0.97);
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.32);
+}
+
+
+/* Ticket Labels */
+
+.ticket-label {
+    min-height: 78px;
+
+    margin-bottom: 1.7rem;
+
+    color: #302b27;
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(1.45rem, 2.3vw, 2rem);
+
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+
+
+/* Dropdown Fields */
+
+.ticket-select {
+    width: 84%;
+    max-width: 270px;
+    min-height: 54px;
+
+    padding:
+        0.6rem 2.5rem 0.6rem 1rem;
+
+    color: #342f2b;
+
+    border:
+        3px solid rgba(107, 81, 64, 0.75);
+
+    border-radius: 6px;
+
+    background-color:
+        rgba(255, 250, 240, 0.98);
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+
+/* Quantity Field */
+
+.ticket-number {
+    width: 78px;
+    min-height: 54px;
+
+    padding:
+        0.5rem 0.75rem;
+
+    color: #342f2b;
+
+    border:
+        3px solid rgba(107, 81, 64, 0.75);
+
+    border-radius: 6px;
+
+    background-color:
+        rgba(255, 250, 240, 0.98);
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.ticket-select:focus,
+.ticket-number:focus {
+    border-color: #e4a40f;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(228, 164, 15, 0.22);
+}
+
+
+/* Buy Tickets Button */
+
+.buy-ticket-button,
+.contact-submit-button {
+    min-width: 170px;
+
+    margin-top: 1.5rem;
+
+    padding:
+        1rem 1.8rem;
+
+    color: #3a2d20;
+
+    border:
+        1px solid rgba(110, 63, 20, 0.4);
+
+    border-radius: 45px;
+
+    background:
+        linear-gradient(
+            #ffd529,
+            #f4ad00
+        );
+
+    box-shadow:
+        0 8px 16px rgba(70, 25, 9, 0.38);
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.buy-ticket-button:hover,
+.buy-ticket-button:focus,
+.contact-submit-button:hover,
+.contact-submit-button:focus {
+    color: #ffffff;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 11px 21px rgba(70, 25, 9, 0.48);
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+    min-height:
+        calc(78vh - 82px);
+
+    padding:
+        2rem 0 5rem;
+}
+
+.contact-form {
+    max-width: 1000px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-control,
+.form-select {
+    color: #3b3632;
+
+    border:
+        2px solid rgba(118, 85, 63, 0.62);
+
+    background-color:
+        rgba(255, 250, 240, 0.97);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #f2ae1d;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(242, 174, 29, 0.22);
+}
+
+.contact-form .form-control {
+    min-height: 48px;
+
+    border-radius: 3px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+.contact-submit-button {
+    min-width: 135px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.main-footer {
+    position: relative;
+
+    padding:
+        2rem 0 1.2rem;
+
+    color: #ffffff;
+
+    background-color:
+        rgba(20, 18, 22, 0.82);
+
+    border-top:
+        2px solid rgba(220, 210, 190, 0.55);
+}
+
+.footer-row {
+    min-height: 120px;
+}
+
+
+/* Footer Copyright */
+
+.footer-copyright {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(1.1rem, 2vw, 1.45rem);
+
+    font-weight: 700;
+
+    text-shadow:
+        2px 2px 3px rgba(0, 0, 0, 0.95);
+}
+
+
+/* Footer Logo */
+
+.footer-logo-link {
+    display: inline-block;
+
+    text-decoration: none;
+}
+
+.footer-logo {
+    display: block;
+
+    width: 235px;
+    max-width: 100%;
+    height: auto;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            3px 4px 2px rgba(0, 0, 0, 0.8)
+        );
+
+    transition:
+        transform 0.2s ease;
+}
+
+.footer-logo:hover {
+    transform:
+        scale(1.04);
+}
+
+
+/* Footer Navigation */
+
+.footer-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 0.8rem;
+}
+
+.footer-navigation a {
+    color: #ffffff;
+
+    font-family:
+        "Oswald",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(1.05rem, 2vw, 1.35rem);
+
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+
+    text-shadow:
+        2px 2px 3px rgba(0, 0, 0, 0.95);
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    color: #ffc000;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* Final Copyright – Only Once */
+
+.footer-bottom-text {
+    width: 100%;
+
+    margin-top: 1.5rem;
+    padding-top: 0.8rem;
+
+    color: #ffffff;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.18);
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(0.78rem, 1.5vw, 1.05rem);
+
+    text-align: center;
+
+    text-shadow:
+        1px 2px 3px rgba(0, 0, 0, 1);
+}
+
+
+/* =====================================================
+   DESKTOP DROPDOWN HOVER
+===================================================== */
+
+@media (min-width: 992px) {
+
+    .cinema-navbar .dropdown:hover .dropdown-menu {
+        display: block;
+
+        margin-top: 0;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET RESPONSIVE SETTINGS
+===================================================== */
+
+@media (max-width: 991.98px) {
+
+    html {
+        scroll-padding-top: 74px;
+    }
+
+    header,
+    section {
+        scroll-margin-top: 74px;
+    }
+
+    .cinema-navbar {
+        min-height: 74px;
+    }
+
+    .navbar-collapse {
+        margin-top: 0.65rem;
+
+        padding: 0.7rem;
+
+        background-color:
+            rgba(81, 18, 13, 0.98);
+    }
+
+    .cinema-dropdown {
+        min-width: 100%;
+    }
+
+    .hero-section,
+    .hero-row {
+        min-height:
+            calc(100vh - 74px);
+    }
+
+    .academy-logo {
+        width:
+            min(78vw, 720px);
+    }
+
+    .movie-section {
+        min-height:
+            calc(100vh - 74px);
+    }
+
+    .movie-poster-panel,
+    .movie-info-panel {
+        height: 570px;
+    }
+
+    .movie-info-panel {
+        padding:
+            1.7rem 1.5rem;
+    }
+
+    .show-times-heading {
+        margin-top: 2rem;
+    }
+
+    .tickets-section {
+        min-height:
+            calc(100vh - 74px);
+
+        padding-top: 5rem;
+    }
+
+    .ticket-card {
+        min-height: 260px;
+
+        padding:
+            2.4rem 1.4rem 1.8rem;
+    }
+
+    .ticket-label {
+        font-size: 1.45rem;
+    }
+
+    .ticket-select {
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: 210px;
+    }
+
+    .footer-navigation {
+        justify-content: center;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE SETTINGS
+===================================================== */
+
+@media (max-width: 767.98px) {
+
+    /*
+       Keep one continuous body background on mobile.
+       It still stretches from top to bottom.
+    */
+
+    body {
+        background-size:
+            100% 100%;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+
+        font-size: 1.55rem;
+    }
+
+    .hero-row {
+        padding:
+            2rem 1rem 4rem;
+    }
+
+    .academy-logo {
+        width: 88vw;
+
+        transform:
+            rotate(-3deg);
+    }
+
+    .movie-section {
+        min-height: auto;
+
+        padding:
+            3rem 0;
+    }
+
+    .movie-poster-panel {
+        height: 620px;
+    }
+
+    .movie-info-panel {
+        height: auto;
+        min-height: 520px;
+    }
+
+    .tickets-section {
+        min-height: auto;
+
+        padding:
+            4rem 0;
+    }
+
+    .ticket-card {
+        min-height: 220px;
+
+        padding:
+            2rem 1.4rem;
+    }
+
+    .ticket-label {
+        min-height: auto;
+
+        margin-bottom: 1.4rem;
+    }
+
+    .ticket-select {
+        max-width: 320px;
+    }
+
+    .buy-ticket-button {
+        width: 180px;
+
+        margin-top: 2rem;
+    }
+
+    .contact-section {
+        min-height: auto;
+
+        padding-bottom: 4rem;
+    }
+
+    .contact-submit-button {
+        width: 100%;
+    }
+
+    .main-footer {
+        padding-top: 2rem;
+    }
+
+    .footer-row {
+        min-height: auto;
+    }
+
+    .footer-copyright {
+        margin-bottom: 1.5rem;
+
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 210px;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-navigation {
+        justify-content: center;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE SETTINGS
+===================================================== */
+
+@media (max-width: 575.98px) {
+
+    .cinema-navbar .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.35rem;
+    }
+
+    .academy-logo {
+        width: 94vw;
+    }
+
+    .movie-section {
+        padding-top: 2rem;
+    }
+
+    .movie-poster-panel {
+        height: 520px;
+
+        padding: 0.65rem;
+    }
+
+    .movie-info-panel {
+        min-height: 500px;
+
+        padding:
+            1.5rem 1.25rem;
+    }
+
+    .movie-info-panel h2 {
+        font-size: 2rem;
+    }
+
+    .movie-info-panel p {
+        font-size: 0.96rem;
+    }
+
+    .show-times {
+        gap: 0.5rem;
+    }
+
+    .show-time {
+        min-width: 72px;
+
+        padding:
+            0.6rem 0.7rem;
+    }
+
+    .section-title {
+        font-size: 3.2rem;
+    }
+
+    .ticket-card {
+        padding:
+            1.5rem 1.2rem;
+    }
+
+    .footer-logo {
+        width: 180px;
+    }
+
+    .footer-navigation {
+        gap: 0.8rem;
+    }
+
+    .footer-navigation a {
+        font-size: 1rem;
+    }
+
+    .footer-bottom-text {
+        font-size: 0.74rem;
+    }
+
+}
