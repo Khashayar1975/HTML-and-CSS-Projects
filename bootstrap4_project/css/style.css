@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.movie-image {
+    height: 240px;
+    object-fit: cover;
+}
+
+.showtime-badges .badge {
+    margin: 3px 2px;
+}
+
+.card {
+    min-width: 0;
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+}
